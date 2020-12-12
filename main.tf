@@ -36,6 +36,7 @@ resource "azurerm_resource_group" "cluster" {
 // ----------------------------------------------------------------------------
 
 module "cluster" {
+  depends_on               = [module.vnet]
   source                   = "./cluster"
   cluster_name             = var.cluster_name
   node_count               = var.node_count
