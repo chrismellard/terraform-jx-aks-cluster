@@ -16,3 +16,6 @@ output "client_key" {
 output "ca_certificate" {
   value = module.cluster.ca_certificate
 }
+output "kube_config_admin_raw" {
+  value = module.cluster.kube_config_admin_raw
+}
