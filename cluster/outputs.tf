@@ -16,6 +16,9 @@ output "ca_certificate" {
 output "kube_config_admin_raw" {
   value = azurerm_kubernetes_cluster.aks.kube_admin_config_raw
 }
+output "kube_config_admin" {
+  value = azurerm_kubernetes_cluster.aks.kube_admin_config
+}
 output "node_resource_group" {
   value = azurerm_kubernetes_cluster.aks.node_resource_group
 }

@@ -19,3 +19,6 @@ output "ca_certificate" {
 output "kube_config_admin_raw" {
   value = module.cluster.kube_config_admin_raw
 }
+output "kube_config_admin" {
+  value = module.cluster.kube_config_admin
+}
